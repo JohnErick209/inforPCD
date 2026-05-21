@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizaçao do cabeçalho */
+
+header {
+    width: 100%;
+    height: 135px;
+    background-color: #1A5F74;
+}
+
+.topimg {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 100px;
+    top: 37px;
+}
+
+.inicio {
+    width: 10%;
+    height: 50px;
+    font-size: 20px;
+    border-style: none;
+    background: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    right: 715px;
+    top: 41px;
+}
+
+.contents {
+    width: 10%;
+    height: 50px;
+    font-size: 20px;
+    border-style: none;
+    background: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    right: 550px;
+    top: 41px;
+}
+
+.about_us {
+    width: 10%;
+    height: 50px;
+    font-size: 20px;
+    border-style: none;
+    background: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    right: 360px;
+    top: 41px;
+}
+
+.login {
+    width: 10%;
+    height: 50px;
+    font-size: 20px;
+    border-style: none;
+    background: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    right: 200px;
+    top: 40px;
+}
+
+.contact {
+    width: 10%;
+    height: 50px;
+    font-size: 20px;
+    border-style: none;
+    background: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+}
+
+/* Parte central da página */
+
+h1 {
+    font-weight: bold;
+    color: #1A5F74;
+    font-family: sans-serif;
+    position: absolute;
+    margin: 8px;
+    left: 91px;
+    top: 283px;
+    font-size: 70px;
+    text-shadow: 10px 10px 20px -10px #000000;
+}
+
+h4 {
+    position: absolute;
+    top: 360px;
+    left: 102px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #1A5F74;
+    font-size: 35px;
+}
+
+.panelimg {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    left: 270px;
+    top: 80px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+/* Parte inferior da página */
+
+.AH {
+    padding: 12px;
+    margin: 8px;
+    width: 42%;
+    background-color: #FFDE59;
+    color: #1A5F74;
+    border-style: solid;
+    border-radius: 23px;
+    border-color: #C9AD36;
+    font-size: 20px;
+    box-shadow: 0px 10px 20px -10px #000000;
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    bottom: 95px;
+    left: 91px;
+}
+
+.article {
+    width: 70%;
+    height: 200px;
+    background-color: #D5DADD;
+    position: relative;
+    left: 15%;
+    padding: 12px;
+    border-radius: 12px;
+    top: 100px;
+}
+
+p {
+    position: relative;
+    font-size: 25px;
+    top: 1px;
+    text-align: center;
+    margin: 12px;
+}

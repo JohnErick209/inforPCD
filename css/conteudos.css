@@ -1,0 +1,23 @@
+/* Altere os "IMG" e "ALT" o quanto quiser */
+
+.title {
+color: #5C6AC4;
+}
+
+header {
+width: 100%;
+height: 100px;
+background-color: #1A5F74;
+}
+
+#coluna1 {
+display: block;
+}
+
+.curso {
+width: 200px;
+height: 100px;
+margin: 12px;
+position: relative;
+left: 25%;
+}
