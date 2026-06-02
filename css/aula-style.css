@@ -115,7 +115,40 @@ header {
     top: 33%;
 }
 
-/* Artigo/Questionário */
+.audio1::-webkit-media-controls-panel {
+    background-color: #979797;
+}
+
+.audio1 {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+}
+
+.audio2::-webkit-media-controls-panel {
+    background-color: #979797;
+}
+
+.audio2 {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 192%;
+}
+
+.audio3::-webkit-media-controls-panel {
+    background-color: #979797;
+}
+
+.audio3 {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+}
+
+/* Artigo / Questionário */
 
 .article {
     width: 70%;
@@ -134,7 +167,31 @@ header {
     font-family: sans-serif;
     text-shadow: 0px 10px 20px -10px #000000;
     position: absolute;
-    left: 29.7%;
-    top: 120%;
+    left: 18.5%;
+    top: 202%;
     font-size: 25px;
+}
+
+.title {
+    color: #1A5F74;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 0px 10px 20px -10px #000000;
+    position: absolute;
+    left: 2.6%;
+    top: 22%;
+    font-size: 25px;
+    text-align: center;
+}
+
+#modulo {
+    
+    width: 70%;
+    height: auto;
+    background-color: #D5DADD;
+    position: absolute;
+    left: 15%;
+    padding: 12px;
+    border-radius: 12px;
+    top: 55%;
 }
