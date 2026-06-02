@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #E8F7FF;
+}
+
 /* Estilizaçao do cabeçalho */
 
 header {
@@ -83,4 +87,54 @@ header {
     position: absolute;
     right: 60px;
     top: 40px;
+}
+
+/* Título */
+
+.C {
+    color: #1A5F74;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 0px 10px 20px -10px #000000;
+    position: absolute;
+    left: 38%;
+    top: 22%;
+    font-size: 50px;
+}
+
+/* Áudios */
+
+.first-audio::-webkit-media-controls-panel {
+    background-color: #979797;
+}
+
+.first-audio {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 33%;
+}
+
+/* Artigo/Questionário */
+
+.article {
+    width: 70%;
+    height: auto;
+    background-color: #D5DADD;
+    position: absolute;
+    left: 15%;
+    padding: 12px;
+    border-radius: 12px;
+    top: 45%;
+}
+
+#questionario {
+    color: #1A5F74;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 0px 10px 20px -10px #000000;
+    position: absolute;
+    left: 29.7%;
+    top: 120%;
+    font-size: 25px;
 }
