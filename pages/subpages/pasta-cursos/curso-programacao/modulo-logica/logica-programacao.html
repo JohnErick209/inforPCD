@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/aula-style.css">
-    <title>InforPCD</title>
+    <title>InforPCD - Aula 1.1</title>
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
         Seu navegador não suporta este elemento de áudio.
     </audio>
 
-    <main>
+    <main class="titulo">
         <h1> Introdução à Programação e Lógica de Programação </h1>
         <h3> Objetivo da aula: </h3>
     </main>
@@ -135,102 +135,119 @@
     <main id="questionario">
         <h1> Questionário — Aula 2.1: Introdução à programação </h1>
 
-        <form>
+        <form id="quizForm">
             <h3> 1. O que é programação? </h3>
             <label>
-                <input type="radio" name="questao1"> A| Criar instruções para um computador
+                <input type="radio" name="questao1" value="A"> A| Criar instruções para um computador
             </label><br>
             <label>
-                <input type="radio" name="questao1"> B| Criar instruções para uma máquina
+                <input type="radio" name="questao1" value="B"> B| Criar instruções para uma máquina qualquer
             </label><br>
             <label>
-                <input type="radio" name="questao1"> C| Montar circuitos eletronicos
+                <input type="radio" name="questao1" value="C"> C| Montar circuitos eletronicos
             </label><br>
             
             <h3> 2. O que é lógica de programação? </h3>
             <label>
-                <input type="radio" name="questao2"> A| Uma forma organizada de resolver problemas
+                <input type="radio" name="questao2" value="A"> A| Uma forma organizada de resolver problemas
             </label><br>
             <label>
-                <input type="radio" name="questao2"> B| Uma forma organizada de analizar problemas
+                <input type="radio" name="questao2" value="B"> B| Um programa para resolver problemas
             </label><br>
             <label>
-                <input type="radio" name="questao2"> C| Um programa para resolver problemas
+                <input type="radio" name="questao2" value="C"> C| Uma forma organizada de analizar problemas
             </label><br>
             
             <h3> 3. Verdadeiro ou falso: Os computadores consegue pensar sozinhos como seres humanos. </h3>
             <label>
-                <input type="radio" name="questao3"> A| Verdadeiro
+                <input type="radio" name="questao3" value="A"> A| Verdadeiro
             </label><br>
             <label>
-                <input type="radio" name="questao3"> B| Falso
+                <input type="radio" name="questao3" value="B"> B| Falso
             </label><br>
             
             <h3> 4. O que é um algoritmo? </h3>
             <label>
-                <input type="radio" name="questao4"> A| Uma linguagem de programação
+                <input type="radio" name="questao4" value="A"> A| Uma linguagem de programação
             </label><br>
             <label>
-                <input type="radio" name="questao4"> B| Uma sequência de passos para resolver um problema
+                <input type="radio" name="questao4" value="B"> B| Uma sequência de passos para resolver um problema
             </label><br>
             <label>
-                <input type="radio" name="questao4"> C| Um componente da placa mãe
+                <input type="radio" name="questao4" value="C"> C| Um componente da placa mãe
             </label><br>
             
             <h3> 5. Qual das opções abaixo é uma linguagem de programação? </h3>
             <label>
-                <input type="radio" name="questao5"> A| HTML
+                <input type="radio" name="questao5" value="A"> A| HTML
             </label><br>
             <label>
-                <input type="radio" name="questao5"> B| MS-DOS
+                <input type="radio" name="questao5" value="B"> B| MS-DOS
             </label><br>
             <label>
-                <input type="radio" name="questao5"> C| Python
+                <input type="radio" name="questao5" value="C"> C| Python
             </label><br>
             
             <h3> 6. Verdadeiro ou falso: Programas são conjuntos de instruções criados para realizar tarefas. </h3>
             <label>
-                <input type="radio" name="questao6"> A| Uma forma organizada de resolver problemas
+                <input type="radio" name="questao6" value="A"> A| Verdadeiro
             </label><br>
             <label>
-                <input type="radio" name="questao6"> B| Uma forma organizada de analizar problemas
+                <input type="radio" name="questao6" value="B"> B| Falso
             </label><br>
             
             <h3> 7. A programação pode ser usada para: </h3>
             <label>
-                <input type="radio" name="questao"> A| Apenas criar videogames
+                <input type="radio" name="questao7" value="A"> A| Apenas criar videogames
             </label><br>
             <label>
-                <input type="radio" name="questao"> B| Criar aplicativos e sites
+                <input type="radio" name="questao7" value="B"> B| Criar aplicativos e sites
             </label><br>
             <label>
-                <input type="radio" name="questao"> C| Desenvolver sistemas sem utilidade
+                <input type="radio" name="questao7" value="C"> C| Desenvolver sistemas sem utilidade
             </label><br>
 
             <h3> 8. Qual das opções abaixo ajuda pessoas com deficiência a utilizar computadores? </h3>
             <label>
-                <input type="radio" name="questao"> A| Leitor de tela
+                <input type="radio" name="questao8" value="A"> A| Leitor de tela
             </label><br>
             <label>
-                <input type="radio" name="questao"> B| Detector de fumaça
+                <input type="radio" name="questao8" value="B"> B| Detector de fumaça
             </label><br>
             <label>
-                <input type="radio" name="questao"> C| Tradutor para inglês
+                <input type="radio" name="questao8" value="C"> C| Tradutor para inglês
             </label><br>
 
             <button type="submit"> Enviar </button>
-
-            <h3> Atividade Complementar </h3>
-            <p>
-                Crie um pequeno algoritmo com passos simples do dia a dia. EXemplos:
-            </p>
-            <ul>
-                <li> Preparar café </li>
-                <li> Ligar o computador </li>
-                <li> Organizar materiais </li>
-            </ul>
-            <p> Escreva os passos em ordem correta. </p>
         </form>
+
+        <h2 id="resultado"></h2><br>
+
+        <h3> Atividade Complementar </h3>
+        <p>
+            Crie um pequeno algoritmo com passos simples do dia a dia. EXemplos:
+        </p>
+        <ul>
+            <li> Preparar café </li>
+            <li> Ligar o computador </li>
+            <li> Organizar materiais </li>
+        </ul>
+        <p> Escreva os passos em ordem correta. </p>
     </main>
+
+    <script>
+        const gabarito = {
+            questao1: "A",
+            questao2: "C",
+            questao3: "B",
+            questao4: "B",
+            questao5: "C",
+            questao6: "A",
+            questao7: "B",
+            questao8: "B"
+        };
+    </script>
+
+    <script src="/js/atividades.js"></script>
 </body>
 </html>

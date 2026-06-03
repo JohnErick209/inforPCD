@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/aula-style.css">
-    <title>InforPCD</title>
+    <title>InforPCD - Aula 2.2</title>
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
         Seu navegador não suporta este elemento de áudio.
     </audio>
 
-    <main>
+    <main class="titulo">
         <h1> Introdução e Comandos Básicos do Portugol - Parte 1 </h1>
         <h3> Objetivo da Aula: Conhecer o Portugol, entender sua estrutura básica e aprender os primeiros comandos de programação. </h3>
     </main>
@@ -131,100 +131,117 @@
     <main id="questionario">
         <h1> Questionário — Aula 2.2 Introdução e Comandos Básicos do Portugol — Parte 1 </h1>
 
-        <form>
+        <form id="quizForm">
             <h3> 1. O que é Portugol? </h3>
             <label>
-                <input type="radio" name="questao1"> A| Uma peça do computador
+                <input type="radio" name="questao1" value="A"> A| Uma peça do computador
             </label><br>
             <label>
-                <input type="radio" name="questao1"> B| Uma linguagem educacional para aprender programação
+                <input type="radio" name="questao1" value="B"> B| Uma linguagem educacional para aprender programação
             </label><br>
             <label>
-                <input type="radio" name="questao1"> C| Uma linguagem para desenvolver programas complexos
+                <input type="radio" name="questao1" value="C"> C| Uma linguagem para desenvolver programas complexos
             </label><br>
 
             <h3> 2. Qual comando marca o início do programa? </h3>
             <label>
-                <input type="radio" name="questao2"> A| escreva
+                <input type="radio" name="questao2" value="A"> A| escreva
             </label><br>
             <label>
-                <input type="radio" name="questao2"> B| inicio
+                <input type="radio" name="questao2" value="B"> B| inicio
             </label><br>
             <label>
-                <input type="radio" name="questao2"> C| start
+                <input type="radio" name="questao2" value="C"> C| start
             </label><br>
 
             <h3> 3. Verdadeiro ou falso: O comando escreva mostra mensagens na tela. </h3>
             <label>
-                <input type="radio" name="questao3"> A| Verdadeiro
+                <input type="radio" name="questao3" value="A"> A| Verdadeiro
             </label><br>
             <label>
-                <input type="radio" name="questao3"> B| Falso
+                <input type="radio" name="questao3" value="B"> B| Falso
             </label><br>
 
             <h3> 4. Qual comando finaliza o algoritmo? </h3>
             <label>
-                <input type="radio" name="questao4"> A| parar
+                <input type="radio" name="questao4" value="A"> A| parar
             </label><br>
             <label>
-                <input type="radio" name="questao4"> B| fim
+                <input type="radio" name="questao4" value="B"> B| fim
             </label><br>
             <label>
-                <input type="radio" name="questao4"> C| fimalgoritmo
+                <input type="radio" name="questao4" value="C"> C| fimalgoritmo
             </label><br>
 
             <h3> 5. O comando escreval faz o quê? </h3>
             <label>
-                <input type="radio" name="questao5"> A| Mostra mensagens pulando linha
+                <input type="radio" name="questao5" value="A"> A| Mostra mensagens pulando linha
             </label><br>
             <label>
-                <input type="radio" name="questao5"> B| Mostra mensagens sem pular uma linha
+                <input type="radio" name="questao5" value="B"> B| Mostra mensagens sem pular uma linha
             </label><br>
             <label>
-                <input type="radio" name="questao5"> C| Mostra mensagens centralizado
+                <input type="radio" name="questao5" value="C"> C| Mostra mensagens centralizado
             </label><br>
             
             <h3> 6. Para que servem os comentários? </h3>
             <label>
-                <input type="radio" name="questao6"> A| Decorar o código
+                <input type="radio" name="questao6" value="A"> A| Decorar o código
             </label><br>
             <label>
-                <input type="radio" name="questao6"> B| Explicar partes do programa
+                <input type="radio" name="questao6" value="B"> B| Explicar partes do programa
             </label><br>
             <label>
-                <input type="radio" name="questao6"> C| Escrever códigos
+                <input type="radio" name="questao6" value="C"> C| Escrever códigos
             </label><br>
 
             <h3> 7. Verdadeiro ou falso: Comentários aparecem para o usuário durante a execução do programa. </h3>
             <label>
-                <input type="radio" name="questao7"> A| Verdadeiro
+                <input type="radio" name="questao7" value="A"> A| Verdadeiro
             </label><br>
             <label>
-                <input type="radio" name="questao7"> B| Falso
+                <input type="radio" name="questao7" value="B"> B| Falso
             </label><br>
             
             <h3> 8. O Portugol ajuda iniciantes porque: </h3>
             <label>
-                <input type="radio" name="questao8"> A| Utiliza palavras em português
+                <input type="radio" name="questao8" value="A"> A| Utiliza palavras em português
             </label><br>
             <label>
-                <input type="radio" name="questao8"> B| Funciona sem computador
+                <input type="radio" name="questao8" value="B"> B| Funciona sem computador
             </label><br>
             <label>
-                <input type="radio" name="questao8"> B| Utiliza palavras complexas
+                <input type="radio" name="questao8" value="C"> B| Utiliza palavras complexas
             </label><br>
 
             <button type="submit"> Enviar </button>
-
-            <h3> Atividade Complementar </h3>
-            <p>
-                Crie um pequeno algoritmo em Portugol que:
-            </p>
-            <ul>
-                <li> mostre seu nome; </li>
-                <li> mostre uma mensagem de boas-vindas. </li>
-            </ul>
         </form>
+
+        <h2 id="resultado"></h2><br>
+
+        <h3> Atividade Complementar </h3>
+        <p>
+            Crie um pequeno algoritmo em Portugol que:
+        </p>
+        <ul>
+            <li> mostre seu nome; </li>
+            <li> mostre uma mensagem de boas-vindas. </li>
+        </ul>
     </main>
+
+    <script>
+        const gabarito = {
+            questao1: "",
+            questao2: "",
+            questao3: "",
+            questao4: "",
+            questao5: "",
+            questao6: "",
+            questao7: "",
+            questao8: ""
+        };
+    </script>
+
+    <script src="/js/atividades.js"></script>
 </body>
 </html>
