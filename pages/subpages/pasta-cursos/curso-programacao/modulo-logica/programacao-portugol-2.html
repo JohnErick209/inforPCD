@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/aula-style.css">
+    <title>InforPCD - Aula 2.3</title>
+</head>
+<body>
+    <header>
+        <img src="/images/Pandora-box.png" alt="miki" class="topimg">
+        <a href="../index.html" class="inicio">Início</a>
+        <a href="../conteudos.html" class="contents">Conteúdos</a>
+        <a href="../sobre-nos.html" class="about_us">Sobre Nós</a>
+        <a href="" class="login">Login</a>
+        <a href="" class="contact">Contato</a>
+    </header>
+
+    <audio controls class="first-audio">
+        <source src="/audio/bedrott.mpeg" type="audio/mpeg">
+        Seu navegador não suporta este elemento de áudio.
+    </audio>
+
+    <main class="titulo">
+        <h1> Introdução e Comandos Básicos do Portugol — Parte 2 </h1>
+        <h3> Objetivo da Aula: Aprender sobre variáveis, entrada de dados e operações básicas utilizando Portugol. </h3>
+    </main>
+
+    <audio controls>
+        <source src="seu-audio.mp3" type="audio/mpeg">
+        Seu navegador não suporta este elemento de áudio.
+    </audio>
+
+    <main id="modulo">
+        <div>
+            <h2> Introdução </h2>
+            <p> Na aula anterior aprendemos: </p>
+            <ul>
+                <li> estrutura básica do algoritmo; </li>
+                <li> comando "escreva"; </li>
+                <li> comando "escreval"; </li>
+                <li> comentários </li>
+            </ul>
+            <p> Agora vamos aprender como os programas podem: </p>
+            <ul>
+                <li> guardar informações; </li>
+                <li> receber dados do usuário; </li>
+                <li> realizar cálculos simples. </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2> O que são variáveis? </h2>
+            <p> Variáveis são espaços usados para armazenar informações. Elas funcionam como “caixas” que guardam dados. Exemplos: </p>
+            <ul>
+                <li> nome; </li>
+                <li> idade; </li>
+                <li> número; </li>
+                <li> nota. </li>
+            </ul>
+            <p> Na programação, as variáveis ajudam o programa a lembrar informações. </p>
+        </div>
+
+        <div>
+            <h2> Declarando variáveis </h2>
+            <p> Antes de usar variáveis, precisamos criá-las. No Portugol usamos a palavra var. Exemplo: </p>
+            <pre><code>
+                var
+                nome: caractere
+                idade: inteiro
+            </code></pre>
+        </div>
+
+        <div>
+            <h2> Tipos de variáveis </h2>
+            <p> Cada variável possui um tipo, isso é, guarda um valor em específico. </p>
+
+            <h3> inteiro </h3>
+            <p> Guarda números inteiros (10, 25, 100). </p>
+
+            <h3> real </h3>
+            <p> Guarda números com decimais. (5.5, 7.8, 10.2). </p>
+
+            <h3> caractere </h3>
+            <p> Guarda letras, palavras e textos. ("Maria", "computador", "A"). </p>
+        </div>
+
+        <div>
+            <h2> O comando LEIA </h2>
+            <p> O comando "leia" permite receber dados do usuário. Exemplo: </p>
+            <pre><code>
+                algoritmo "nome"
+
+                var
+                nome: caractere
+                
+                inicio 
+                
+                escreva("Digite seu nome: ")
+                leia(nome)
+
+                escreva("Olá, ", nome)
+                
+                fimalgoritmo
+            </code></pre>
+            <p> Nesse exemplo: </p>
+            <ol>
+                <li> o programa pede o nome; </li>
+                <li> o usuário digita; </li>
+                <li> a informação é armazenada; </li>
+                <li> depois o nome aparece na tela. </li>
+            </ol>
+        </div>
+
+        <div>
+            <h2> Operações matemáticas </h2>
+            <p> O Portugol também pode realizar cálculos. </p>
+            <ul>
+                <li> Soma: + </li>
+                <li> Subtração: - </li>
+                <li> Mutiplicação: * </li>
+                <li> Divisão: / </li>
+            </ul>
+
+            <h3> Exemplo de soma </h3>
+            <pre><code>
+                algoritmo "soma"
+
+                var 
+                n1: inteiro 
+                n2: inteiro 
+                resultado: inteiro 
+                
+                inicio 
+                
+                escreva("Digite o primeiro número: ") 
+                leia(n1) 
+                
+                escreva("Digite o segundo número: ") 
+                leia(n2) 
+                
+                resultado <- n1 + n2 
+
+                escreva("Resultado: ", resultado)
+                
+                fimalgoritmo
+            </code></pre>
+        </div>
+
+        <div>
+            <h2> Explicando o símbolo "<-" </h2>
+            <p> O símbolo "<-" significa “recebe”. </p>
+            <pre><code> resultado <- n1 + n2 </code></pre>
+            <p> Isso quer dizer que a variável "resultado" vai guardar o valor da soma. </p>
+        </div>
+
+        <div>
+            <h2> A importância das variáveis </h2>
+            <p> As variáveis são fundamentais na programação pois elas permitem: </p>
+            <ul>
+                <li> armazenar informações; </li>
+                <li> realizar cálculos; </li>
+                <li> criar sistemas; </li>
+                <li> desenvolver programas mais avançados. </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2> Portugol e Aprendizagem </h2>
+            <p> O Portugol ajuda iniciantes a aprender lógica, organização, entrada e saida de dados, cálculos, estrutura de programação, entre outros. Esses conhecimentos serão importantes para aprender outras linguagens no futuro. </p>
+        </div>
+
+        <div> 
+            <h2> Resumo da Aula </h2>
+            <p> Nesta aula aprendemos: </p>
+            <ul>
+                <li> o que são variáveis; </li>
+                <li> tipos de variáveis; </li>
+                <li> comando "leia"; </li>
+                <li> operações matemáticas; </li>
+                <li> armazenamento de dados. </li>
+            </ul>
+            <p> Lembre-se: As variáveis ajudam programas a guardar e utilizar informações. </p>
+        </div>
+    </main>
+
+    <audio controls>
+        <source src="/audio/bedrott.mpeg" type="audio/mpeg">
+        Seu navegador não suporta este elemento de áudio.
+    </audio>
+
+    <main id="questionario">
+        <h1> Questionário — Aula 2.3 Introdução e Comandos Básicos do Portugol — Parte 2 </h1>
+
+        <form id="quizForm">
+            <h3> 1. O que é uma variável? </h3>
+            <label>
+                <input type="radio" name="questao1" value="A"> A| Uma peça do computador
+            </label><br>
+            <label>
+                <input type="radio" name="questao1" value="B"> B| Um espaço para armazenar informações
+            </label><br>
+            <label>
+                <input type="radio" name="questao1" value="C"> C| Um espaço para armazenar componentes
+            </label><br>
+
+            <h3> 2. Qual palavra é usada para declarar variáveis no Portugol? </h3>
+            <label>
+                <input type="radio" name="questao2" value="A"> A| inicio
+            </label><br>
+            <label>
+                <input type="radio" name="questao2" value="B"> B| escreva
+            </label><br>
+            <label>
+                <input type="radio" name="questao2" value="C"> C| var
+            </label><br>
+
+            <h3> 3. Verdadeiro ou falso: O comando "leia" recebe informações do usuário. </h3>
+            <label>
+                <input type="radio" name="questao3" value="A"> A| Verdadeiro
+            </label><br>
+            <label>
+                <input type="radio" name="questao3" value="B"> B| Falso
+            </label><br>
+
+            <h3> 4. Qual tipo de variável guarda textos? </h3>
+            <label>
+                <input type="radio" name="questao4" value="A"> A| caractere
+            </label><br>
+            <label>
+                <input type="radio" name="questao4" value="B"> B| inteiro
+            </label><br>
+            <label>
+                <input type="radio" name="questao4" value="C"> C| real
+            </label><br>
+
+            <h3> 5. Qual operador representa multiplicação? </h3>
+            <label>
+                <input type="radio" name="questao5" value="A"> A| +
+            </label><br>
+            <label>
+                <input type="radio" name="questao5" value="B"> B| /
+            </label><br>
+            <label>
+                <input type="radio" name="questao5" value="C"> C| *
+            </label><br>
+
+            <h3> 6. O símbolo "<-" significa: </h3>
+            <label>
+                <input type="radio" name="questao6" value="A"> A| Apagar informação
+            </label><br>
+            <label>
+                <input type="radio" name="questao6" value="B"> B| Mostrar mensagem
+            </label><br>
+            <label>
+                <input type="radio" name="questao6" value="C"> C| Receber valor
+            </label><br>
+
+            <h3> 7. Verdadeiro ou falso: Variáveis podem guardar reais e letras. </h3>
+            <label>
+                <input type="radio" name="questao7" value="A"> A| Verdadeiro
+            </label><br>
+            <label>
+                <input type="radio" name="questao7" value="B"> B| Falso
+            </label><br>
+
+            <h3> 8. Qual comando mostra mensagens na tela? </h3>
+            <label>
+                <input type="radio" name="questao8" value="A"> A| leia
+            </label><br>
+            <label>
+                <input type="radio" name="questao8" value="B"> B| escreva
+            </label><br>
+            <label>
+                <input type="radio" name="questao8" value="C"> C| var
+            </label><br>
+
+            <button type="submit"> Enviar </button>
+        </form>
+
+        <h2 id="resultado"></h2><br>
+
+        <h3> Atividade Complementar </h3>
+        <p> Crie um algoritmo em Portugol que: </p>
+        <ul>
+            <li> peça a idade do usuário; </li>
+            <li> mostre a idade digitada na tela. </li>
+        </ul>
+    </main>
+
+    <script>
+        const gabarito = {
+            questao1: "B",
+            questao2: "C",
+            questao3: "A",
+            questao4: "A",
+            questao5: "C",
+            questao6: "C",
+            questao7: "A",
+            questao8: "B"
+        };
+    </script>
+
+    <script src="/js/atividades.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/aula-style.css">
-    <title>InforPCD - As Areas da Informática</title>
+    <title>InforPCD - Aula 1.2</title>
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
         Seu navegador não suporta este elemento de áudio.
     </audio>
 
-    <main>
+    <main class="titulo">
         <h1> As Areas da Informática </h1>
         <h3> Objetivo da Aula: Conhecer algumas das principais áreas da informática e entender como a tecnologia pode ser usada no mercado de trabalho. </h3>
     </main>
@@ -172,88 +172,104 @@
     <main id="questionario">
         <h1> Questionário — Aula 1.2: As Areas da Informática </h1>
 
-        <form>
+        <form id="quizForm">
             <h3>  1. O que é uma área da informática? </h3>
             <label>
-                <input type="radio" name="questao1"> A| Um jogo de computador
+                <input type="radio" name="questao1" value="A"> A| Um jogo de computador
             </label><br>
             <label>
-                <input type="radio" name="questao1"> B| Um setor da tecnologia com funções específicas
+                <input type="radio" name="questao1" value="B"> B| Um setor da tecnologia com funções específicas
             </label><br>
             <label>
-                <input type="radio" name="questao1"> C| Um setor da tecnologia com funções desprezáveis
+                <input type="radio" name="questao1" value="C"> C| Um setor da tecnologia com funções desprezáveis
             </label><br>
 
             <h3> 2. Qual área trabalha com criação de programas e aplicativos? </h3>
             <label>
-                <input type="radio" name="questao2"> A| Programação
+                <input type="radio" name="questao2" value="A"> A| Programação
             </label><br>
             <label>
-                <input type="radio" name="questao2"> B| Desenvolvimento WEB
+                <input type="radio" name="questao2" value="B"> B| Desenvolvimento WEB
             </label><br>
             <label>
-                <input type="radio" name="questao2"> C| Segurança de Dados
+                <input type="radio" name="questao2" value="C"> C| Segurança de Dados
             </label><br>
 
             <h3> 3. Verdadeiro ou falso: O desenvolvimento WEB é responsável pela criação de sistemas online. </h3>
             <label>
-                <input type="radio" name="questao3"> A| Verdadeiro
+                <input type="radio" name="questao3" value="A"> A| Verdadeiro
             </label><br>
             <label>
-                <input type="radio" name="questao3"> B| Falso
+                <input type="radio" name="questao3" value="B"> B| Falso
             </label><br>
 
             <h3> 4. O suporte técnico ajuda pessoas a: </h3>
             <label>
-                <input type="radio" name="questao4"> A| Aprender sobre a história da empresa
+                <input type="radio" name="questao4" value="A"> A| Aprender sobre a história da empresa
             </label><br>
             <label>
-                <input type="radio" name="questao4"> B| Resolver problemas tecnológicos
+                <input type="radio" name="questao4" value="B"> B| Criar problemas tecnológicos
             </label><br>
             <label>
-                <input type="radio" name="questao4"> C| Criar problemas tecnológicos
+                <input type="radio" name="questao4" value="C"> C| Resolver problemas tecnológicos
             </label><br>
 
             <h3> 5. Qual área protege computadores contra vírus e invasões? </h3>
             <label>
-                <input type="radio" name="questao5"> A| Analista de Dados
+                <input type="radio" name="questao5" value="A"> A| Analista de Dados
             </label><br>
             <label>
-                <input type="radio" name="questao5"> B| Segurança de Dados
+                <input type="radio" name="questao5" value="B"> B| Segurança de Dados
             </label><br>
             <label>
-                <input type="radio" name="questao5"> C| Vigilante de Dados
+                <input type="radio" name="questao5" value="C"> C| Vigilante de Dados
             </label><br>
 
             <h3> 6. Verdadeiro ou falso: A informática NÃO pode ajudar pessoas com deficiência. </h3>
             <label>
-                <input type="radio" name="questao6"> A| Verdadeiro
+                <input type="radio" name="questao6" value="A"> A| Verdadeiro
             </label><br>
             <label>
-                <input type="radio" name="questao6"> B| Falso
+                <input type="radio" name="questao6" value="B"> B| Falso
             </label><br>
             
             <h3> 7. Qual das opções abaixo é uma tecnologia usada no desenvolvimento WEB? </h3>
             <label>
-                <input type="radio" name="questao7"> A| Kotlin
+                <input type="radio" name="questao7" value="A"> A| Kotlin
             </label><br>
             <label>
-                <input type="radio" name="questao7"> B| Java
+                <input type="radio" name="questao7" value="B"> B| Java
             </label><br>
             <label>
-                <input type="radio" name="questao7"> C| JavaScript
+                <input type="radio" name="questao7" value="C"> C| JavaScript
             </label><br>
 
             <button type="submit"> Enviar </button>
-
-            <h3> Atividade Complementar </h3>
-            <p> Escolha uma área da informática apresentada na aula. Depois escreva: </p>
-            <ul>
-                <li> qual área você achou mais interessante; </li>
-                <li>  que essa área faz; </li>
-                <li> como ela pode ajudar pessoas no dia a dia. </li>
-            </ul>
         </form>
+
+        <h2 id="resultado"></h2><br>
+
+        <h3> Atividade Complementar </h3>
+        <p> Escolha uma área da informática apresentada na aula. Depois escreva: </p>
+        <ul>
+            <li> qual área você achou mais interessante; </li>
+            <li>  que essa área faz; </li>
+            <li> como ela pode ajudar pessoas no dia a dia. </li>
+        </ul>
     </main>
+    
+    <script>
+        const gabarito = {
+            questao1: "B",
+            questao2: "A",
+            questao3: "A",
+            questao4: "C",
+            questao5: "B",
+            questao6: "B",
+            questao7: "C"
+        };
+    </script>
+
+    <script src="/js/atividades.js"></script>
 </body>
 </html>

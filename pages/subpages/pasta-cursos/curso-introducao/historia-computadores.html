@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/aula-style.css">
-    <title>InforPCD - A História dos Computadores</title>
+    <title>InforPCD - Aula 1.1</title>
 </head>
 <body>
     <header>
@@ -127,90 +127,106 @@
 
         <h1> Questionário — Aula 1.1: A História dos Computadores </h1>
 
-        <form>
+        <form id="quizForm">
             <h3> 1. O que é um computador? </h3>
             <label>
-                <input type="radio" name="questao1"> A| Um tipo de televisão
+                <input type="radio" name="questao1" value="A"> A| Um tipo de televisão
             </label><br>
             <label>
-                <input type="radio" name="questao1"> B| Uma máquina que processa informações
+                <input type="radio" name="questao1" value="B"> B| Uma máquina que processa informações
             </label><br>
             <label>
-                <input type="radio" name="questao1"> C| Um aparelho usado apenas para jogos
+                <input type="radio" name="questao1" value="C"> C| Um aparelho usado apenas para jogos
             </label><br>
 
             <h3> 2. Qual foi um dos primeiros computadores eletrônicos do mundo? </h3>
             <label>
-                <input type="radio" name="questao2"> A| HTML
+                <input type="radio" name="questao2" value="A"> A| HTML
             </label><br>
             <label>
-                <input type="radio" name="questao2"> B| MS-DOS
+                <input type="radio" name="questao2" value="B"> B| MS-DOS
             </label><br>
             <label>
-                <input type="radio" name="questao2"> C| ENIAC
+                <input type="radio" name="questao2" value="C"> C| ENIAC
             </label><br>
 
             <h3> 3. Verdadeiro ou falso: Os primeiros computadores eram pequenos e leves.</h3>
             <label>
-                <input type="radio" name="questao3"> A| Verdadeiro
+                <input type="radio" name="questao3" value="A"> A| Verdadeiro
             </label><br>
             <label>
-                <input type="radio" name="questao3"> B| Falso
+                <input type="radio" name="questao3" value="B"> B| Falso
             </label><br>
 
             <h3> 4. O que os computadores atuais ajudam as pessoas a fazer? </h3>
             <label>
-                <input type="radio" name="questao4"> A| Trabalhar, estudar e se comunicar
+                <input type="radio" name="questao4" value="A"> A| Apenas jogar
             </label><br>
             <label>
-                <input type="radio" name="questao4"> B| Apenas estudar
+                <input type="radio" name="questao4" value="B"> B| Apenas estudar e trabalhar
             </label><br>
             <label>
-                <input type="radio" name="questao4"> C| Apenas jogar
+                <input type="radio" name="questao4" value="C"> C| Trabalhar, estudar e se comunicar
             </label><br>
             
             <h3> 5. Qual tecnologia ajuda pessoas cegas a utilizar computadores? </h3>
             <label>
-                <input type="radio" name="questao5"> A|  Impressora
+                <input type="radio" name="questao5" value="A"> A|  Impressora
             </label><br>
             <label>
-                <input type="radio" name="questao5"> B| Leitor de tela
+                <input type="radio" name="questao5" value="B"> B| Leitor de tela
             </label><br>
             <label>
-                <input type="radio" name="questao5"> C| Scanner
+                <input type="radio" name="questao5" value="C"> C| Scanner
             </label><br>
 
             <h3> 6. Verdadeiro ou falso: A informática criou novas oportunidades de trabalho </h3>
             <label>
-                <input type="radio" name="questao6"> A| Verdadeiro
+                <input type="radio" name="questao6" value="A"> A| Verdadeiro
             </label><br>
             <label>
-                <input type="radio" name="questao6"> B| Falso
+                <input type="radio" name="questao6" value="B"> B| Falso
             </label><br>
 
             <h3> 7. Qual das opções abaixo é uma área da informática? </h3>
             <label>
-                <input type="radio" name="questao7"> A| Programação
+                <input type="radio" name="questao7" value="A"> A| Pintura com softwares
             </label><br>
             <label>
-                <input type="radio" name="questao7"> B| Criação de peças mecânicas
+                <input type="radio" name="questao7" value="B"> B| Criação de peças mecânicas
             </label><br>
             <label>
-                <input type="radio" name="questao7"> C| Pintura artística
+                <input type="radio" name="questao7" value="C"> C| Programação
             </label><br>
             
             <button type="submit"> Enviar </button>
-
-            <h2> Atividade Complementar </h2>
-            <h3> Pesquise ou converse com colegas sobre: </h3>
-            <li>
-                como os computadores são usados no dia a dia;
-                quais tecnologias ajudam pessoas com deficiência.
-            </li>
-            <p>
-                Depois, escreva um pequeno exemplo de uso da informática no trabalho ou nos estudos.
-            </p>
         </form>
+
+        <h2 id="resultado"></h2><br>
+
+        <h2> Atividade Complementar </h2>
+        <h3> Pesquise ou converse com colegas sobre: </h3>
+        <li>
+            como os computadores são usados no dia a dia;
+            quais tecnologias ajudam pessoas com deficiência.
+        </li>
+        <p>
+            Depois, escreva um pequeno exemplo de uso da informática no trabalho ou nos estudos.
+        </p>
     </main>
+
+    <script>
+        const gabarito = {
+            questao1: "B",
+            questao2: "C",
+            questao3: "B",
+            questao4: "C",
+            questao5: "B",
+            questao6: "A",
+            questao7: "C"
+        };
+    </script>
+
+    <script src="/js/atividades.js"></script>
 </body>
 </html>

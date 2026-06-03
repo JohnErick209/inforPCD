@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/aula-style.css">
+    <title>InforPCD - Aula 2.4</title>
+</head>
+<body>
+    <header>
+        <img src="/images/Pandora-box.png" alt="miki" class="topimg">
+        <a href="../index.html" class="inicio">Início</a>
+        <a href="../conteudos.html" class="contents">Conteúdos</a>
+        <a href="../sobre-nos.html" class="about_us">Sobre Nós</a>
+        <a href="" class="login">Login</a>
+        <a href="" class="contact">Contato</a>
+    </header>
+
+    <audio controls class="first-audio">
+        <source src="/audio/bedrott.mpeg" type="audio/mpeg">
+        Seu navegador não suporta este elemento de áudio.
+    </audio>
+
+    <main class="titulo">
+        <h1> Introdução e Comandos Básicos do Portugol — Parte 3 </h1>
+        <h3> Objetivo da Aula: Aprender a utilizar estruturas condicionais no Portugol para que os programas possam tomar decisões. </h3>
+    </main>
+
+    <audio controls>
+        <source src="seu-audio.mp3" type="audio/mpeg">
+        Seu navegador não suporta este elemento de áudio.
+    </audio>
+
+    <main id="modulo">
+        <div>
+            <h2> Introdução </h2>
+            <p> Até agora aprendemos: </p>
+            <ul>
+                <li> comandos básicos; </li>
+                <li> variáveis; </li>
+                <li> entrada de dados; </li>
+                <li> operações matemáticas. </li>
+            </ul>
+            <p> Porém, muitos programas precisam tomar decisões. Eles podem, por exemplo, precisar verificar idade, senha, analisar notas, comparar valores, etc. Para isso utilizamos estruturas condicionais. </p>
+        </div>
+
+        <div>
+            <h2> O que são estruturas condicionais? </h2>
+            <p> Estruturas condicionais permitem que o programa escolha ações diferentes dependendo da situação. Exemplo: </p>
+            <ul>
+                <li> se a pessoa for maior de idade; </li>
+                <li> então mostrar uma mensagem específica. </li>
+            </ul>
+            <p> Na programação, isso ajuda o computador a “decidir” qual caminho seguir. </p>
+        </div>
+
+        <div>
+            <h2> O comando SE </h2>
+            <p> O comando "se" é usado para verificar condições. </p>
+            <pre><code>
+                se condicao entao
+                
+                    comandos
+                
+                fimse
+            </code></pre>
+            <p> A condição é colocada entre o "se" e "entao". Assim, se a condição for verdadeira, o programa executará os comandos que estão entre "entao" e "fimse". Alguns editores mostram esse bloco com espaços no início das linhas para facilitar a organização visual do código. </p>
+
+            <h3> Exemplo simples </h3>
+            <pre><code>
+                algoritmo "idade"
+                
+                var 
+                idade: inteiro 
+                
+                inicio 
+                
+                escreva("Digite sua idade: ") 
+                leia(idade) 
+                
+                se idade >= 18 entao 
+                
+                    escreva("Você é maior de idade") 
+                
+                fimse 
+                
+                fimalgoritmo
+            </code></pre>
+            <p> O programa: </p>
+            <ul>
+                <li> pede a idade; </li>
+                <li> guarda a informação; </li>
+                <li> verifica a condição; </li>
+                <li> mostra a mensagem se a condição for verdadeira. </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2> Operadores de comparação </h2>
+            <p> Os operadores de comparação ajudam a verificar condições. </p>
+            <table>
+              <thead>
+                <tr>
+                  <th> Operador </th>
+                  <th> Significado </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> = </td>
+                  <td>igual</td>
+                </tr>
+
+                <tr>
+                  <td> <> </td>
+                  <td>diferente</td>
+                </tr>
+
+                <tr>
+                  <td> > </td>
+                  <td>maior</td>
+                </tr>
+
+                <tr>
+                  <td> < </td>
+                  <td>menor</td>
+                </tr>
+                
+                <tr>
+                  <td> >= </td>
+                  <td>maior ou igual</td>
+                </tr>
+
+                <tr>
+                  <td> <= </td>
+                  <td>menor ou igual</td>
+                </tr>
+              </tbody>
+            </table>   
+        </div>
+        
+        <div>
+            <h2> O comando SENAO </h2>
+            <p> O comando "senao" é usado quando queremos mostrar outro resultado caso a condição seja falsa. </p>
+            <pre><code>
+                se condicao entao
+                 
+                    comandos 
+                
+                senao 
+                 
+                    comandos
+                
+                fimse
+            </code></pre>
+
+            <h3> Exemplo com SENAO </h3>
+            <pre><code>
+                algoritmo "aprovacao"
+                
+                var 
+                nota: real 
+                
+                inicio 
+                
+                escreva("Digite sua nota: ") 
+                leia(nota) 
+                
+                se nota >= 7 entao
+                    escreva("Aprovado") 
+
+                senao
+                    escreva("Reprovado") 
+
+                fimse 
+                
+                fimalgoritmo
+            </code></pre>
+
+            <h3> Como funciona a condição? </h3>
+            <p> Neste exemplo: </p>
+            <ul>
+                <li>se a nota for maior ou igual a 7;</li>
+                <li>o programa mostra “Aprovado”.</li>
+            </ul>
+            <p>Caso contrário:</p>
+            <ul>
+                <li>mostra “Reprovado”.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2> A importância das condições </h2>
+            <p> As estruturas condicionais são muito importantes porque permitem criar programas mais inteligentes. Elas são utilizadas em: </p>
+            <ul>
+                <li>sistemas;</li>
+                <li>aplicativos;</li>
+                <li>jogos;</li>
+                <li>sites;</li>
+                <li>cadastros;</li>
+                <li>login de usuários.</li>
+                <li>e em sistemas mais sutís, como divisão por zero.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2> Organização do código </h2>
+            <p> Durante a programação é importante: </p>
+            <ul>
+                <li> manter o código organizado; </li>
+                <li>usar nomes simples, porém auto-explicativos;</li>
+                <li>evitar excesso de informações.</li>
+            </ul>
+            <p>Isso facilita a leitura, manutenção. acessibilidade e aprendizado.</p>
+        </div>
+
+        <div>
+            <h2> Portugol e Aprendizagem </h2>
+            <p> As estruturas condicionais ajudam no desenvolvimento do raciocínio lógico. Aprender esses conceitos facilita o estudo de outras linguagens de programação no futuro. </p>
+        </div>
+
+        <div>
+            <h2> Resumo da Aula </h2>
+            <p> Nesta aula aprendemos: </p>
+            <ul> 
+                <li>o que são estruturas condicionais;</li>
+                <li>comando "se";</li>
+                <li>comando "senao";</li>
+                <li>operadores de comparação;</li>
+                <li>tomada de decisão nos programas.</li>
+            </ul>
+            <p> As condições permitem que os programas analisem situações e executem diferentes ações. </p>
+        </div>
+    </main>
+
+    <audio controls>
+        <source src="/audio/bedrott.mpeg" type="audio/mpeg">
+        Seu navegador não suporta este elemento de áudio.
+    </audio>
+
+    <main id="questionario">
+        <h1> Questionário — Aula 2.4 </h1>
+
+        <form id="quizForm">
+            <h3> 1. O que são estruturas condicionais? </h3>
+            <label>
+                <input type="radio" name="questao1" value="A"> A| Peças do computador
+            </label><br>
+            <label>
+                <input type="radio" name="questao1" value="B"> B| Recursos que permitem decisões no programa
+            </label><br>
+            <label>
+                <input type="radio" name="questao1" value="C"> C| Recursos que permitem realizar calculos
+            </label><br>
+
+            <h3> 2. Qual comando verifica condições no Portugol? </h3>
+            <label>
+                <input type="radio" name="questao2" value="A"> A| condicao
+            </label><br>
+            <label>
+                <input type="radio" name="questao2" value="B"> B| senao
+            </label><br>
+            <label>
+                <input type="radio" name="questao2" value="C"> C| se
+            </label><br>
+
+            <h3> 3. Verdadeiro ou falso: O comando "senao" executa ações quando a condição for falsa.</h3>
+            <label>
+                <input type="radio" name="questao3" value="A"> A| Verdadeiro
+            </label><br>
+            <label>
+                <input type="radio" name="questao3" value="B"> B| Falso
+            </label><br>
+
+            <h3> 4. Qual operador significa “maior que”? </h3>
+            <label>
+                <input type="radio" name="questao4" value="A"> A| <
+            </label><br>
+            <label>
+                <input type="radio" name="questao4" value="B"> B| >
+            </label><br>
+            <label>
+                <input type="radio" name="questao4" value="C"> C| =
+            </label><br>
+            
+            <h3> 5. O operador ">=" significa: </h3>
+            <label>
+                <input type="radio" name="questao5" value="A"> A| Menor ou igual
+            </label><br>
+            <label>
+                <input type="radio" name="questao5" value="B"> B| Diferente
+            </label><br>
+            <label>
+                <input type="radio" name="questao5" value="C"> C| Maior ou igual
+            </label><br>
+
+            <h3> 6. Verdadeiro ou falso: Estruturas condicionais não ajudam programas a tomar decisões. </h3>
+            <label>
+                <input type="radio" name="questao6" value="A"> A| Verdadeiro
+            </label><br>
+            <label>
+                <input type="radio" name="questao6" value="B"> B| Falso
+            </label><br>
+
+            <h3> 7. Em um sistema de notas, qual condição pode indicar aprovação de um aluno após uma prova? </h3>
+            <label>
+                <input type="radio" name="questao7" value="A"> A| nota >= 7
+            </label><br>
+            <label>
+                <input type="radio" name="questao7" value="B"> B| nota < 0
+            </label><br>
+            <label>
+                <input type="radio" name="questao7" value="C"> C| nota = computador
+            </label><br>
+
+            <h3> 8. Estruturas condicionais são usadas em: </h3>
+            <label>
+                <input type="radio" name="questao8" value="A"> A| Aplicativos e sistemas
+            </label><br>
+            <label>
+                <input type="radio" name="questao8" value="B"> B| Apenas jogos 
+            </label><br>
+            <label>
+                <input type="radio" name="questao8" value="C"> C| Somente sistemas complexos
+            </label><br>
+
+            <button type="submit"> Enviar </button>
+        </form>
+
+        <h2 id="resultado"></h2><br>
+
+        <h3> Atividade Complementar </h3>
+        <p>
+            Crie um algoritmo em Portugol que:
+        </p>
+        <ul>
+            <li>peça a idade do usuário;</li>
+            <li>verifique se a pessoa é maior ou menor de idade;</li>
+            <li>mostre uma mensagem na tela.</li>
+        </ul>
+    </main>
+
+    <script>
+        const gabarito = {
+            questao1: "B",
+            questao2: "C",
+            questao3: "A",
+            questao4: "B",
+            questao5: "C",
+            questao6: "B",
+            questao7: "A",
+            questao8: "A"
+        };
+    </script>
+
+    <script src="/js/atividades.js"></script>
+</body>
+</html>
