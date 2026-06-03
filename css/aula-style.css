@@ -137,17 +137,6 @@ header {
     top: 192%;
 }
 
-.audio3::-webkit-media-controls-panel {
-    background-color: #979797;
-}
-
-.audio3 {
-    width: 50%;
-    position: absolute;
-    left: 25%;
-    top: 40%;
-}
-
 /* Artigo / Questionário */
 
 .article {
