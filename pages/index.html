@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InforPCD - Incício</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <header>
-        <img src="images/Pandora-box.png" alt="miki" class="topimg">
-        <button class="inicio">Início</button>
-        <button class="contents">Conteúdos</button>
-        <button class="about_us">Sobre Nós</button>
-        <button class="login">Login</button>
-        <button class="contact">Contato</button>
+        <img src="/images/inforpcd_icon.png" alt="miki" class="topimg">
+        <a href="../index.html" class="inicio">Início</a>
+        <a href="../conteudos.html" class="contents">Conteúdos</a>
+        <a href="../sobre-nos.html" class="about_us">Sobre Nós</a>
+        <a href="" class="login">Login</a>
+        <a href="" class="contact">Contato</a>
     </header>
+
     <h1>Lorem ipsum dolor</h1>
-    <h4>matheus miranda, 2, que desgraça<br> é essa? um elefante acasalando</h4>
+    <h4>matheus miranda, 2, que desgraça<br> é essa? um elefante</h4>
     <button class="AH">Aprenda Hoje!</button>
     
-    <img src="images/Pandora-box.png" alt="miki" class="panelimg">
+    <img src="/images/Pandora-box.png" alt="miki" class="panelimg">
     <div class="article">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium beatae, animi tenetur,<br> illo nihil fugit ab
@@ -29,6 +30,19 @@
             dignissimos!
         </p>
     </div>
+
+    <!-- INÍCIO DO CÓDIGO VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- FIM DO CÓDIGO VLIBRAS -->
 </body>
 
 </html>

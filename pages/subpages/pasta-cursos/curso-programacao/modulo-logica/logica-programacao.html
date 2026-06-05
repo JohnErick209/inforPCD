@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <img src="/images/Pandora-box.png" alt="miki" class="topimg">
-        <button class="inicio">Início</button>
-        <button class="contents">Conteúdos</button>
-        <button class="about_us">Sobre Nós</button>
-        <button class="login">Login</button>
-        <button class="contact">Contato</button>
+        <img src="/images/inforpcd_icon.png" alt="miki" class="topimg">
+        <a href="../index.html" class="inicio">Início</a>
+        <a href="../conteudos.html" class="contents">Conteúdos</a>
+        <a href="../sobre-nos.html" class="about_us">Sobre Nós</a>
+        <a href="" class="login">Login</a>
+        <a href="" class="contact">Contato</a>
     </header>
 
     <audio controls>
@@ -249,5 +249,18 @@
     </script>
 
     <script src="/js/atividades.js"></script>
+
+    <!-- INÍCIO DO CÓDIGO VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- FIM DO CÓDIGO VLIBRAS -->
 </body>
 </html>
