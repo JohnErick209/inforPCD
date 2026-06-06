@@ -9,11 +9,13 @@
 <body>
     <header>
         <img src="/images/inforpcd_icon.png" alt="miki" class="topimg">
-        <a href="../index.html" class="inicio">Início</a>
-        <a href="../conteudos.html" class="contents">Conteúdos</a>
-        <a href="../sobre-nos.html" class="about_us">Sobre Nós</a>
-        <a href="" class="login">Login</a>
-        <a href="" class="contact">Contato</a>
+        <nav>
+            <a href="/index.html">Início</a>
+            <a href="/pages/sobre-nos.html">Sobre Nós</a>
+            <a href="/pages/conteudos.html">Conteúdos</a>
+            <a href="/pages/login.html">Login</a>
+            <a href="/pages/contato.html">Contato</a>
+        </nav>
     </header>
 
     <audio controls class="first-audio">
@@ -21,16 +23,16 @@
         Seu navegador não suporta este elemento de áudio.
     </audio>
 
-    <main class="titulo">
+    <section class="titulo">
         <h1> Introdução e Comandos Básicos do Portugol — Parte 2 </h1>
         <h3> Objetivo da Aula: Aprender sobre variáveis, entrada de dados e operações básicas utilizando Portugol. </h3>
-    </main>
+    </section>
 
-    <audio controls>
-        <source src="seu-audio.mp3" type="audio/mpeg">
+    <audio controls class="audio1">
+        <source src="/audio/Terrible-Things.mpeg" type="audio/mpeg">
         Seu navegador não suporta este elemento de áudio.
     </audio>
-
+    
     <main id="modulo">
         <div>
             <h2> Introdução </h2>
@@ -48,7 +50,7 @@
                 <li> realizar cálculos simples. </li>
             </ul>
         </div>
-
+        
         <div>
             <h2> O que são variáveis? </h2>
             <p> Variáveis são espaços usados para armazenar informações. Elas funcionam como “caixas” que guardam dados. Exemplos: </p>
@@ -70,27 +72,27 @@
                 idade: inteiro
             </code></pre>
         </div>
-
+        
         <div>
             <h2> Tipos de variáveis </h2>
             <p> Cada variável possui um tipo, isso é, guarda um valor em específico. </p>
-
+            
             <h3> inteiro </h3>
             <p> Guarda números inteiros (10, 25, 100). </p>
-
+            
             <h3> real </h3>
             <p> Guarda números com decimais. (5.5, 7.8, 10.2). </p>
-
+            
             <h3> caractere </h3>
             <p> Guarda letras, palavras e textos. ("Maria", "computador", "A"). </p>
         </div>
-
+        
         <div>
             <h2> O comando LEIA </h2>
             <p> O comando "leia" permite receber dados do usuário. Exemplo: </p>
             <pre><code>
                 algoritmo "nome"
-
+                
                 var
                 nome: caractere
                 
@@ -98,7 +100,7 @@
                 
                 escreva("Digite seu nome: ")
                 leia(nome)
-
+                
                 escreva("Olá, ", nome)
                 
                 fimalgoritmo
@@ -111,7 +113,7 @@
                 <li> depois o nome aparece na tela. </li>
             </ol>
         </div>
-
+        
         <div>
             <h2> Operações matemáticas </h2>
             <p> O Portugol também pode realizar cálculos. </p>
@@ -121,11 +123,11 @@
                 <li> Mutiplicação: * </li>
                 <li> Divisão: / </li>
             </ul>
-
+            
             <h3> Exemplo de soma </h3>
             <pre><code>
                 algoritmo "soma"
-
+                
                 var 
                 n1: inteiro 
                 n2: inteiro 
@@ -140,20 +142,20 @@
                 leia(n2) 
                 
                 resultado <- n1 + n2 
-
+                
                 escreva("Resultado: ", resultado)
                 
                 fimalgoritmo
             </code></pre>
         </div>
-
+        
         <div>
             <h2> Explicando o símbolo "<-" </h2>
             <p> O símbolo "<-" significa “recebe”. </p>
             <pre><code> resultado <- n1 + n2 </code></pre>
             <p> Isso quer dizer que a variável "resultado" vai guardar o valor da soma. </p>
         </div>
-
+        
         <div>
             <h2> A importância das variáveis </h2>
             <p> As variáveis são fundamentais na programação pois elas permitem: </p>
@@ -164,12 +166,12 @@
                 <li> desenvolver programas mais avançados. </li>
             </ul>
         </div>
-
+        
         <div>
             <h2> Portugol e Aprendizagem </h2>
             <p> O Portugol ajuda iniciantes a aprender lógica, organização, entrada e saida de dados, cálculos, estrutura de programação, entre outros. Esses conhecimentos serão importantes para aprender outras linguagens no futuro. </p>
         </div>
-
+        
         <div> 
             <h2> Resumo da Aula </h2>
             <p> Nesta aula aprendemos: </p>
@@ -183,15 +185,15 @@
             <p> Lembre-se: As variáveis ajudam programas a guardar e utilizar informações. </p>
         </div>
     </main>
-
-    <audio controls>
+    
+    <audio controls class="audio2">
         <source src="/audio/bedrott.mpeg" type="audio/mpeg">
         Seu navegador não suporta este elemento de áudio.
     </audio>
-
-    <main id="questionario">
+    
+    <section id="questionario">
         <h1> Questionário — Aula 2.3 Introdução e Comandos Básicos do Portugol — Parte 2 </h1>
-
+        
         <form id="quizForm">
             <h3> 1. O que é uma variável? </h3>
             <label>
@@ -286,7 +288,15 @@
             <li> peça a idade do usuário; </li>
             <li> mostre a idade digitada na tela. </li>
         </ul>
-    </main>
+    </section>
+
+    <footer>
+        <img src="/images/inforpcd_icon.png" alt="miki" class="footerimg">
+        <div class="footerp">
+            <p>Tecnologia acessível para quem está pronto para o mercado.</p>
+            <p>InforPCD | Todos os direitos reservados</p>
+        </div>
+    </footer>
 
     <script>
         const gabarito = {

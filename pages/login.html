@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InforPCD - Incício</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <header>
+        <img src="/images/inforpcd_icon.png" alt="Logo InforPCD" class="topimg">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="conteudos.html">Conteúdos</a>
+            <a href="login.html">Login</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    
+    <section class="login">
+        <h1>Bem-vindo de volta! Vamos continuar o seu aprendizado?</h1>
+        <p>Digite seus dados abaixo para acessar sua Sala de Aula Virtual</p>
+        <form>
+            <h2>Matrícula</h2>
+            <input type="text" class="matricula" placeholder="Digite sua matrícula" required>
+
+            <h2>Senha</h2>
+            <input type="password" class="senha" placeholder="Digite sua senha" required>
+
+            <button type="submit" class="enviar">Entrar</button>
+
+            <div class="login-links">
+                <a>Esqueceu a senha?</a>|
+                <a>Cadastre-se</a>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <img src="/images/inforpcd_icon.png" alt="Logo InforPCD" class="footerimg">
+        <div>
+            <p>Tecnologia acessível para quem está pronto para o mercado.</p>
+            <p>InforPCD | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- INÍCIO DO CÓDIGO VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- FIM DO CÓDIGO VLIBRAS -->
+</body>
+
+</html>

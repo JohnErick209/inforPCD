@@ -8,29 +8,26 @@
 </head>
 <body>
     <header>
-        <img src="/images/inforpcd_icon.png" alt="miki" class="topimg">
-        <a href="../index.html" class="inicio">Início</a>
-        <a href="../conteudos.html" class="contents">Conteúdos</a>
-        <a href="../sobre-nos.html" class="about_us">Sobre Nós</a>
-        <a href="" class="login">Login</a>
-        <a href="" class="contact">Contato</a>
+        <img src="/images/inforpcd_icon.png" alt="Logo InforPCD" class="topimg">
+        <nav>
+            <a href="/index.html">Início</a>
+            <a href="/pages/sobre-nos.html">Sobre Nós</a>
+            <a href="/pages/conteudos.html">Conteúdos</a>
+            <a href="/pages/login.html">Login</a>
+            <a href="/pages/contato.html">Contato</a>
+        </nav>
     </header>
-
-    <audio controls>
-        <source src="/audio/bedrott.mpeg" type="audio/mpeg">
-        Seu navegador não suporta este elemento de áudio.
-    </audio>
-
-    <main class="titulo">
+    
+    <section class="titulo">
         <h1> As Areas da Informática </h1>
         <h3> Objetivo da Aula: Conhecer algumas das principais áreas da informática e entender como a tecnologia pode ser usada no mercado de trabalho. </h3>
-    </main>
-
-    <audio controls>
-        <source src="/audio/bedrott.mpeg" type="audio/mpeg">
+    </section>
+    
+    <audio controls class="audio1">
+        <source src="/audio/Terrible-Things.mpeg" type="audio/mpeg">
         Seu navegador não suporta este elemento de áudio.
     </audio>
-
+    
     <main id="modulo">
         <div>
             <h2> Introdução</h2>
@@ -164,12 +161,12 @@
 
     </main>
 
-    <audio controls>
+    <audio controls class="audio2">
         <source src="/audio/bedrott.mpeg" type="audio/mpeg">
         Seu navegador não suporta este elemento de áudio.
     </audio>
 
-    <main id="questionario">
+    <section id="questionario">
         <h1> Questionário — Aula 1.2: As Areas da Informática </h1>
 
         <form id="quizForm">
@@ -253,10 +250,18 @@
         <p> Escolha uma área da informática apresentada na aula. Depois escreva: </p>
         <ul>
             <li> qual área você achou mais interessante; </li>
-            <li>  que essa área faz; </li>
+            <li> o que essa área faz; </li>
             <li> como ela pode ajudar pessoas no dia a dia. </li>
         </ul>
-    </main>
+    </section>
+
+    <footer>
+        <img src="/images/inforpcd_icon.png" alt="Logo InforPCD" class="footerimg">
+        <div class="footerp">
+            <p>Tecnologia acessível para quem está pronto para o mercado.</p>
+            <p>InforPCD | Todos os direitos reservados</p>
+        </div>
+    </footer>
     
     <script>
         const gabarito = {

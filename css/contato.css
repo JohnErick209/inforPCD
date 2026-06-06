@@ -43,19 +43,11 @@ nav a {
     height: 60px;
 }
 
-/* conteudos */
 
-#coluna1 {
-    display: block;
-}
 
-.curso {
-    width: 200px;
-    height: 100px;
-    margin: 12px;
-    position: relative;
-    left: 25%;
-}
+
+
+/* footer */
 
 footer{
     display: flex;

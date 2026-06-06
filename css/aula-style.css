@@ -5,160 +5,118 @@
 }
 
 body {
-    background-color: #E8F7FF;
+    background-color: #FFFDF5;
 }
 
 /* Estilizaçao do cabeçalho */
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 80px;
+
+    background-color: #1A5F74;
+    position: fixed;
+    z-index: 100;
+
     width: 100%;
     height: 135px;
-    background-color: #1A5F74;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 .topimg {
     width: 60px;
     height: 60px;
-    position: absolute;
-    left: 100px;
-    top: 37px;
-}
-
-.inicio {
-    width: 10%;
-    height: 50px;
-    font-size: 20px;
-    border-style: none;
-    background: none;
-    color: #ffffff;
-    font-weight: bold;
-    position: absolute;
-    right: 715px;
-    top: 41px;
-}
-
-.contents {
-    width: 10%;
-    height: 50px;
-    font-size: 20px;
-    border-style: none;
-    background: none;
-    color: #ffffff;
-    font-weight: bold;
-    position: absolute;
-    right: 550px;
-    top: 41px;
-}
-
-.about_us {
-    width: 10%;
-    height: 50px;
-    font-size: 20px;
-    border-style: none;
-    background: none;
-    color: #ffffff;
-    font-weight: bold;
-    position: absolute;
-    right: 360px;
-    top: 41px;
-}
-
-.login {
-    width: 10%;
-    height: 50px;
-    font-size: 20px;
-    border-style: none;
-    background: none;
-    color: #ffffff;
-    font-weight: bold;
-    position: absolute;
-    right: 200px;
-    top: 40px;
-}
-
-.contact {
-    width: 10%;
-    height: 50px;
-    font-size: 20px;
-    border-style: none;
-    background: none;
-    color: #ffffff;
-    font-weight: bold;
-    position: absolute;
-    right: 60px;
-    top: 40px;
 }
 
 /* Título */
 
-.C {
+.titulo {
     color: #1A5F74;
     font-weight: bold;
     font-family: sans-serif;
-    text-shadow: 0px 10px 20px -10px #000000;
-    position: absolute;
-    left: 38%;
-    top: 22%;
-    font-size: 50px;
+    text-shadow: 0px, 0px, 10px, 20px #000000;
+    text-align: center;
+    padding-top:  10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 30px;
+}
+
+.titulo h3{
+    color: #333333;
 }
 
 /* Áudios */
 
-.first-audio::-webkit-media-controls-panel {
-    background-color: #979797;
-}
-
-.first-audio {
-    width: 50%;
-    position: absolute;
-    left: 25%;
-    top: 33%;
-}
-
 .audio1::-webkit-media-controls-panel {
     background-color: #979797;
-}
-
-.audio1 {
-    width: 50%;
-    position: absolute;
-    left: 25%;
-    top: 40%;
 }
 
 .audio2::-webkit-media-controls-panel {
     background-color: #979797;
 }
 
+.audio1,
 .audio2 {
     width: 50%;
-    position: absolute;
-    left: 25%;
-    top: 192%;
+    display: block;
+    margin: 50px auto;
 }
 
 /* Artigo / Questionário */
 
-.article {
-    width: 70%;
-    height: auto;
-    background-color: #D5DADD;
-    position: absolute;
-    left: 15%;
-    padding: 12px;
-    border-radius: 12px;
-    top: 45%;
+#modulo {
+    padding: 20px 8% 70px;
+    font-size:x-large;
+    font-family: sans-serif;
+}
+
+ul,
+ol {
+    padding-left: 40px;
+    margin: 15px 0;
+}
+
+p{
+    margin-bottom: 1.75em;
 }
 
 #questionario {
     color: #1A5F74;
-    font-weight: bold;
     font-family: sans-serif;
-    text-shadow: 0px 10px 20px -10px #000000;
-    position: absolute;
-    left: 18.5%;
-    top: 202%;
-    font-size: 25px;
+    padding: 20px 8%;
+    font-size:x-large;
+}
+
+.enviar {
+    padding: 12px;
+    margin: 8px;
+    width: 100%;
+    background-color: #fcd94d;
+    color: #1A5F74;
+    border-style: solid;
+    border-radius: 23px;
+    border-color: #C9AD36;
+    font-size: 20px;
+    box-shadow: 0px 10px 20px -10px #000000;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
 }
 
 .title {
@@ -173,14 +131,29 @@ header {
     text-align: center;
 }
 
-#modulo {
-    
-    width: 70%;
-    height: auto;
-    background-color: #D5DADD;
-    position: absolute;
-    left: 15%;
-    padding: 12px;
-    border-radius: 12px;
-    top: 55%;
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 33%;
+
+    background-color: #333333;
+    width: 100%;
+    height: 135px;
+}
+
+.footerp{
+    color: #D5DADD;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    z-index: 100;
+}
+
+.footerimg {
+    width: 70px;
+    height: 70px;
 }

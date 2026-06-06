@@ -8,40 +8,37 @@
 </head>
 <body>
     <header>
-        <img src="/images/inforpcd_icon.png" alt="miki" class="topimg">
-        <a href="../index.html" class="inicio">Início</a>
-        <a href="../conteudos.html" class="contents">Conteúdos</a>
-        <a href="../sobre-nos.html" class="about_us">Sobre Nós</a>
-        <a href="" class="login">Login</a>
-        <a href="" class="contact">Contato</a>
+        <img src="/images/inforpcd_icon.png" alt="Logo InforPCD" class="topimg">
+        <nav>
+            <a href="/index.html">Início</a>
+            <a href="/pages/sobre-nos.html">Sobre Nós</a>
+            <a href="/pages/conteudos.html">Conteúdos</a>
+            <a href="/pages/login.html">Login</a>
+            <a href="/pages/contato.html">Contato</a>
+        </nav>
     </header>
 
-    <audio controls>
-        <source src="seu-audio.mp3" type="audio/mpeg">
-        Seu navegador não suporta este elemento de áudio.
-    </audio>
-
-    <main class="titulo">
+    <section class="titulo">
         <h1> Introdução à Programação e Lógica de Programação </h1>
-        <h3> Objetivo da aula: </h3>
-    </main>
+        <h3> Objetivo da aula: Compreender o que é programação, o que é lógica de programação e como os computadores executam comandos. </h3>
+    </section>
 
-    <audio controls>
-        <source src="seu-audio.mp3" type="audio/mpeg">
+    <audio controls class="audio1">
+        <source src="/audio/Terrible-Things.mpeg" type="audio/mpeg">
         Seu navegador não suporta este elemento de áudio.
     </audio>
-
+    
     <main id="modulo">
         <div>
             <h2> Introdução </h2>
             <p> A programação está presente em muitas tecnologias do dia a dia, nos celulares, em aplicativoss, em jogos, sites, eletrodomésticos, etc. Essas tecnologias, tecnicamente chamadas de computadores conseguem realizar tarefas porque recebem instruções criadas por programadores. Essas instruções são chamadas de códigos. </p>
         </div>
-
+        
         <div>
             <h2> O que é programação? </h2>
             <p> Programação é o processo de criar comandos para o computador executar tarefas. Os computadores não pensam como os seres humanos, eles apenas seguem instruções. Exemplo: Quando uma pessoa abre um aplicativo, existe uma programação dizendo ao computador o que deve acontecer. </p>
         </div>
-
+        
         <div>
             <h2> O que é lógica de programação? </h2>
             <p> Lógica de programação é a forma organizada de resolver problemas usando passos. Antes de escrever códigos, o programador precisa pensar: </p>
@@ -52,7 +49,7 @@
             </ul>
             <p> A lógica ajuda o computador a entender exatamente o que deve fazer. </p>
         </div>
-
+        
         <div>
             <h2> Exemplo de lógica no dia a dia </h2>
             <p> Muitas atividades usam lógica. Exemplo: fazer um sanduíche. </p>
@@ -62,10 +59,10 @@
                 <li> fechar o pão; </li>
                 <li> servir. </li>
             </ol>
-
+            
             <p> Existe uma sequência correta de ações. Na programação acontece a mesma coisa. </p>
         </div>
-
+        
         <div>
             <h2> O que é algoritmo? </h2>
             <p> Um algoritmo é uma sequência de passos para resolver um problema. Os algoritmos estão presentes em: </p>
@@ -86,7 +83,7 @@
                 <li> enxaguar. </li>
             </ol>
         </div>
-
+        
         <div>
             <h2> Como os computadores entendem comandos? </h2>
             <p> Os computadores utilizam linguagens de programação. Essas linguagens permitem que os programadores escrevam instruções. Exemplos de linguagens: </p>
@@ -98,7 +95,7 @@
             </ul>
             <p> Cada linguagem possui regras próprias. </p>
         </div>
-
+        
         <div>
             <h2> O que é um programa? </h2>
             <p> Um programa é um conjunto de instruções criado para realizar tarefas. Exemplos: </p>
@@ -110,31 +107,31 @@
             </ul>
             <p> Todos esses programas foram criados com programação. </p>
         </div>
-
+        
         <div>
-                <h2> A importancia da programação </h2>
-                <p> A programação´é muito importante atualmente. Com ela, é posssivel automatizar tarefas, controlar sistemas, criar tecnologias acessíveis, etc. Muitas empresas procuram profissionais de programação. </p>
+            <h2> A importancia da programação </h2>
+            <p> A programação´é muito importante atualmente. Com ela, é posssivel automatizar tarefas, controlar sistemas, criar tecnologias acessíveis, etc. Muitas empresas procuram profissionais de programação. </p>
         </div>
-
+        
         <div>
             <h2> Programação e acessibilidade </h2>
             <p> A programação pode ajudar pessoas com deficiência por meio de leitores de tela, comandos por voz, tradução em Libras, etc. Programadores também podem criar sistemas acessíveis para incluir mais pessoas na tecnolgia. </p>
         </div>
-
+        
         <div>
             <h2> Resumo da aula </h2>
             <p> Nesta aula, aprendemos sobre o que é programação e a lógica de programação, o que é algoritmo, como os computadores executam comandos e a importancia da programação no mercado de trabalho. A lógica de programação é a base para aprender qualquer linguagem de programação. </p>
         </div>
     </main>
-
-    <audio controls>
-        <source src="seu-audio.mp3" type="audio/mpeg">
-        Seu navegador não suporta este elemento de áudio.
-    </audio>
-
-    <main id="questionario">
+    
+    <section id="questionario">
         <h1> Questionário — Aula 2.1: Introdução à programação </h1>
 
+        <audio controls class="audio2">
+            <source src="/audio/bedrott.mpeg" type="audio/mpeg">
+            Seu navegador não suporta este elemento de áudio.
+        </audio>
+        
         <form id="quizForm">
             <h3> 1. O que é programação? </h3>
             <label>
@@ -218,7 +215,7 @@
                 <input type="radio" name="questao8" value="C"> C| Tradutor para inglês
             </label><br>
 
-            <button type="submit"> Enviar </button>
+            <button type="submit" class="enviar"> Enviar </button>
         </form>
 
         <h2 id="resultado"></h2><br>
@@ -233,7 +230,15 @@
             <li> Organizar materiais </li>
         </ul>
         <p> Escreva os passos em ordem correta. </p>
-    </main>
+    </section>
+
+    <footer>
+        <img src="/images/inforpcd_icon.png" alt="Logo InforPCD" class="footerimg">
+        <div class="footerp">
+            <p>Tecnologia acessível para quem está pronto para o mercado.</p>
+            <p>InforPCD | Todos os direitos reservados</p>
+        </div>
+    </footer>
 
     <script>
         const gabarito = {
@@ -244,7 +249,7 @@
             questao5: "C",
             questao6: "A",
             questao7: "B",
-            questao8: "B"
+            questao8: "A"
         };
     </script>
 

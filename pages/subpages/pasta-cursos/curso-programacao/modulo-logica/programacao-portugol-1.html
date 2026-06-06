@@ -9,11 +9,13 @@
 <body>
     <header>
         <img src="/images/inforpcd_icon.png" alt="miki" class="topimg">
-        <a href="../index.html" class="inicio">Início</a>
-        <a href="../conteudos.html" class="contents">Conteúdos</a>
-        <a href="../sobre-nos.html" class="about_us">Sobre Nós</a>
-        <a href="" class="login">Login</a>
-        <a href="" class="contact">Contato</a>
+        <nav>
+            <a href="/index.html">Início</a>
+            <a href="/pages/sobre-nos.html">Sobre Nós</a>
+            <a href="/pages/conteudos.html">Conteúdos</a>
+            <a href="/pages/login.html">Login</a>
+            <a href="/pages/contato.html">Contato</a>
+        </nav>
     </header>
 
     <audio controls>
@@ -21,22 +23,22 @@
         Seu navegador não suporta este elemento de áudio.
     </audio>
 
-    <main class="titulo">
+    <section class="titulo">
         <h1> Introdução e Comandos Básicos do Portugol - Parte 1 </h1>
         <h3> Objetivo da Aula: Conhecer o Portugol, entender sua estrutura básica e aprender os primeiros comandos de programação. </h3>
-    </main>
+    </section>
 
-    <audio controls>
-        <source src="seu-audio.mp3" type="audio/mpeg">
+    <audio controls class="audio1">
+        <source src="/audio/Terrible-Things.mpeg" type="audio/mpeg">
         Seu navegador não suporta este elemento de áudio.
     </audio>
-
+    
     <main id="modulo">
         <div>
             <h2> Introdução </h2>
             <p> Antes de aprender linguagens mais avançadas, muitos estudantes começam utilizando Portugol. O Portugol é uma linguagem educacional criada para facilitar o aprendizado da lógica de programação. Ele utiliza comandos em português, tornando o aprendizado mais simples para iniciantes. </p>
         </div>
-
+        
         <div>
             <h2> O que é Portugol? </h2>
             <p> Portugol é uma forma simplificada de escrever algoritmos. Seu objetivo é ensinar lógica, organização, raciocínio e a estrutura da programação. </p>
@@ -47,16 +49,16 @@
             <p> No Portugol (e na maioria das outras linguagens), os programas geralmente possuem um início, um meio e um fim. Exemplo: </p>
             <pre><code>
                 algoritmo "mensagem"
-
-            inicio
-
-            escreva("Olá, mundo!")
-
-            fimalgoritmo
+                
+                inicio
+                
+                escreva("Olá, mundo!")
+                
+                fimalgoritmo
             </code></pre>
-
+            
             <h2> Explicando o Código </h2>
-
+            
             <h3> algoritmo </h3>
             <p> Define o nome do algoritmo. </p>
             
@@ -70,7 +72,7 @@
             <p> Finaliza o programa. </p>
             
         </div>
-
+        
         <di>
             <h2> O comando ESCREVA </h2>
             <p> O comando "escreva" serve para exibir mensagens. Exemplo: </p>
@@ -82,7 +84,7 @@
                 Bem-vindo ao curso!
             </code></pre>
         </di>
-
+        
         <div>
             <h2> O comando ESCREVAL </h2>
             <p> O comando "escreval" também mostra mensagens, mas pula para a próxima linha. Exemplo: </p>
@@ -96,7 +98,7 @@
                 Linha 2
             </code></pre>
         </div>
-
+        
         <div>
             <h2> Comentários </h2>
             <p> Comentários servem para explicar partes do código. Eles ajudam o programador a organizar informações. Exemplo: </p>
@@ -123,14 +125,14 @@
         </div>
     </main>
 
-    <audio controls>
-        <source src="seu-audio.mp3" type="audio/mpeg">
+    <audio controls class="audio2">
+        <source src="/audio/bedrott.mpeg" type="audio/mpeg">
         Seu navegador não suporta este elemento de áudio.
     </audio>
-
-    <main id="questionario">
+    
+    <section id="questionario">
         <h1> Questionário — Aula 2.2 Introdução e Comandos Básicos do Portugol — Parte 1 </h1>
-
+        
         <form id="quizForm">
             <h3> 1. O que é Portugol? </h3>
             <label>
@@ -142,7 +144,7 @@
             <label>
                 <input type="radio" name="questao1" value="C"> C| Uma linguagem para desenvolver programas complexos
             </label><br>
-
+            
             <h3> 2. Qual comando marca o início do programa? </h3>
             <label>
                 <input type="radio" name="questao2" value="A"> A| escreva
@@ -153,7 +155,7 @@
             <label>
                 <input type="radio" name="questao2" value="C"> C| start
             </label><br>
-
+            
             <h3> 3. Verdadeiro ou falso: O comando escreva mostra mensagens na tela. </h3>
             <label>
                 <input type="radio" name="questao3" value="A"> A| Verdadeiro
@@ -227,7 +229,15 @@
             <li> mostre seu nome; </li>
             <li> mostre uma mensagem de boas-vindas. </li>
         </ul>
-    </main>
+    </section>
+
+    <footer>
+        <img src="/images/inforpcd_icon.png" alt="miki" class="footerimg">
+        <div class="footerp">
+            <p>Tecnologia acessível para quem está pronto para o mercado.</p>
+            <p>InforPCD | Todos os direitos reservados</p>
+        </div>
+    </footer>
 
     <script>
         const gabarito = {
