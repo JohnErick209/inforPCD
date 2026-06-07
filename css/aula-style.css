@@ -38,6 +38,10 @@ nav a {
     font-family: sans-serif;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 .topimg {
     width: 60px;
     height: 60px;
