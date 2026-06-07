@@ -94,10 +94,21 @@ h2 {
     border-radius: 23px;
     border-color: #C9AD36;
     font-size: 20px;
-    box-shadow: 0px 10px 20px -10px #000000;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     font-size: 35px;
     font-weight: bold;
     margin-top: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.AH:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 20px -10px #000000;
+}
+
+.AH:active {
+    transform: translateY(0);
 }
 
 /* artigo */
