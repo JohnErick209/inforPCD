@@ -72,6 +72,13 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
+.sobrenos h2{
+    color: #333333;
+    font-family: sans-serif;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
 .sobrenos img {
     width: 100%;
     max-width: 500px;
