@@ -135,6 +135,43 @@ p{
     text-align: center;
 }
 
+
+/* botao */
+
+.btn-div{
+    text-align: center; /* Para botões inline-block */
+    width: 800px;
+    margin: 0 auto;
+}
+
+.btn-enviar {
+    width: 50%;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    background-color: #fcd94d;
+    color: #1A5F74;
+
+    border: 2px solid #C9AD36;
+    border-radius: 12px;
+
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
 /* footer */
 
 footer{

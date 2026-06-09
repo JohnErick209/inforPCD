@@ -95,6 +95,7 @@ nav a:hover {
 .imgcontato {
     width: 350px;
     border-radius: 10px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 }
 
 form {
@@ -201,7 +202,12 @@ h4 {
 .redes img {
     width: 50px;
     height: 50px;
+    transition: all 0.3s ease;
     cursor: pointer;
+}
+
+.redes img:hover {
+    box-shadow: 0 0px 20px rgba(0,0,0,0.2);
 }
 
 /* Footer */
