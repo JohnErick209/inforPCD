@@ -6,6 +6,11 @@
 
 body {
     background-color: #FFFDF5;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* Estilizaçao do cabeçalho */
@@ -47,99 +52,115 @@ nav a:hover {
     height: 60px;
 }
 
-/* Conteúdos */
 
-.conteudos {
-    max-width: 1400px;
+/* conteudos */
+
+/* Área principal */
+
+.conteudo-curso {
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 180px 80px 80px;
+    padding: 180px 30px 80px;
+    font-family: sans-serif;
 }
 
-.conteudos h1 {
+/* Informações do curso */
+
+.curso-info {
     text-align: center;
-    color: #1A5F74;
-    font-family: sans-serif;
-    font-size: 55px;
     margin-bottom: 60px;
 }
 
-.categoria {
-    margin-bottom: 80px;
-}
-
-.categoria h2 {
+.curso-info h1 {
     color: #1A5F74;
-    font-family: sans-serif;
-    font-size: 42px;
-    margin-bottom: 30px;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-.cards {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+.curso-info p {
+    color: #444;
+    font-size: 22px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.card {
-    flex: 1;
-    min-width: 300px;
+/* Módulos */
 
+.modulo {
     background-color: white;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 40px;
 
-    border-radius: 20px;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-
-    overflow: hidden;
-
-    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-.card:hover {
-    transform: translateY(-8px);
-}
-
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-
-.card h3 {
+.modulo h2 {
     color: #1A5F74;
-    font-family: sans-serif;
-    font-size: 28px;
-
-    padding: 20px 20px 10px;
+    margin-bottom: 25px;
+    font-size: 32px;
 }
 
-.card p {
-    color: #333333;
-    font-family: sans-serif;
-    font-size: 18px;
+/* Aulas */
 
-    padding: 0 20px 20px;
+.aula {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #DDD;
 }
 
-.btn-curso {
-    display: block;
+.aula:last-child {
+    border-bottom: none;
+}
 
-    margin: 0 20px 20px;
+.aula span {
+    font-size: 22px;
+    color: #333;
+}
 
-    padding: 15px;
+/* Botão */
 
-    background-color: #fcd94d;
-
+.aula a {
+    background-color: #F4D35E;
     color: #1A5F74;
 
-    text-align: center;
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
     text-decoration: none;
-
     font-weight: bold;
-    font-family: sans-serif;
 
-    border-radius: 12px;
-    border: 2px solid #C9AD36;
+    transition: all 0.3s ease;
+}
+
+.aula a:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .aula {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .curso-info h1 {
+        font-size: 36px;
+    }
+
+    .modulo h2 {
+        font-size: 26px;
+    }
 }
 
 /* footer */

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/aula-style.css">
     <title>InforPCD - Aula 2.2</title>
+    <link rel="icon" type="image/png" href="/images/inforpcd_icon.png">
 </head>
 <body>
     <header>
@@ -12,26 +13,18 @@
         <nav>
             <a href="/index.html">Início</a>
             <a href="/pages/sobre-nos.html">Sobre Nós</a>
-            <a href="/pages/conteudos.html">Conteúdos</a>
+            <a href="/pages/cursos.html">Cursos</a>
             <a href="/pages/login.html">Login</a>
             <a href="/pages/contato.html">Contato</a>
         </nav>
     </header>
 
-    <audio controls>
-        <source src="seu-audio.mp3" type="audio/mpeg">
-        Seu navegador não suporta este elemento de áudio.
-    </audio>
-
+    
     <section class="titulo">
         <h1> Introdução e Comandos Básicos do Portugol - Parte 1 </h1>
         <h3> Objetivo da Aula: Conhecer o Portugol, entender sua estrutura básica e aprender os primeiros comandos de programação. </h3>
     </section>
 
-    <audio controls class="audio1">
-        <source src="/audio/Terrible-Things.mpeg" type="audio/mpeg">
-        Seu navegador não suporta este elemento de áudio.
-    </audio>
     
     <main id="modulo">
         <div>
@@ -125,10 +118,6 @@
         </div>
     </main>
 
-    <audio controls class="audio2">
-        <source src="/audio/bedrott.mpeg" type="audio/mpeg">
-        Seu navegador não suporta este elemento de áudio.
-    </audio>
     
     <section id="questionario">
         <h1> Questionário — Aula 2.2 Introdução e Comandos Básicos do Portugol — Parte 1 </h1>
@@ -216,7 +205,9 @@
                 <input type="radio" name="questao8" value="C"> B| Utiliza palavras complexas
             </label><br>
 
-            <button type="submit"> Enviar </button>
+            <div class="btn-div">
+                <button class="btn-enviar" type="submit"> Enviar </button>
+            </div>
         </form>
 
         <h2 id="resultado"></h2><br>
